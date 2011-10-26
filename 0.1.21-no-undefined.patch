@@ -18,6 +18,16 @@
  	$(PLATFORM_LDFLAGS)
  
  tumbler_font_thumbnailer_la_LIBADD =					\
+--- origsrc/tumbler-0.1.22/plugins/gst-thumbnailer/Makefile.am	2011-08-06 08:51:46.000000000 -0500
++++ src/tumbler-0.1.22/plugins/gst-thumbnailer/Makefile.am	2011-10-26 00:00:53.782033600 -0500
+@@ -49,6 +49,7 @@ tumbler_gst_thumbnailer_la_LDFLAGS =
+ 	-avoid-version							\
+ 	-export-dynamic							\
+ 	-module								\
++	-no-undefined							\
+ 	$(PLATFORM_LDFLAGS)
+ 
+ tumbler_gst_thumbnailer_la_LIBADD =					\
 --- origsrc/tumbler-0.1.21/plugins/jpeg-thumbnailer/Makefile.am	2011-02-12 13:46:10.000000000 -0600
 +++ src/tumbler-0.1.21/plugins/jpeg-thumbnailer/Makefile.am	2011-02-27 18:07:44.811246600 -0600
 @@ -47,6 +47,7 @@ tumbler_jpeg_thumbnailer_la_LDFLAGS =
