@@ -1,0 +1,11 @@
+--- origsrc/tumbler-0.1.21/plugins/xdg-cache/Makefile.am	2011-02-12 13:46:10.000000000 -0600
++++ src/tumbler-0.1.21/plugins/xdg-cache/Makefile.am	2011-02-27 19:40:05.208102800 -0600
+@@ -63,6 +63,6 @@ tumbler_xdg_cache_la_DEPENDENCIES =
+ install-data-local:
+ 	$(mkinstalldirs) $(DESTDIR)$(tumbler_plugindir)
+ 	-( cd $(DESTDIR)$(tumbler_plugindir) ; \
+-		test -x tumbler-xdg-cache.so || \
+-		ln -sf tumbler-xdg-cache.so tumbler-cache-plugin.so )
++		test -x tumbler-xdg-cache.dll || \
++		ln -sf tumbler-xdg-cache.dll tumbler-cache-plugin.dll )
+ endif
