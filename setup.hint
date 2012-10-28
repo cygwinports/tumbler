@@ -1,7 +1,0 @@
-category: Gnome Xfce
-requires: gstreamer0.10-plugins-base libcairo2 libdbus-glib_1_2 libdbus1_3 libffmpegthumbnailer4 libfreetype6 libgdk_pixbuf2.0_0 libglib2.0_0 libgsf1_114 libgstreamer0.10_0 libintl8 libjpeg8 libopenrawgnome1 libpng14 libpoppler-glib8
-sdesc: "Xfce thumbnailer service"
-ldesc: "Tumbler is a D-Bus service for applications to request 
-thumbnails for various URI schemes and MIME types. It is an 
-implementation of the thumbnail management D-Bus specification, written 
-in an object-oriented fashion using GLib and GObject."

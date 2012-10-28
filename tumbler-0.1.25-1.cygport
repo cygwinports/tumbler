@@ -1,7 +1,0 @@
-inherit xfce4
-
-DESCRIPTION="Xfce desktop thumbnailer service"
-
-PATCH_URI="0.1.21-dllext.patch"
-
-export PLATFORM_LDFLAGS="-no-undefined"
