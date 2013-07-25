@@ -1,8 +1,8 @@
 inherit xfce4
 
 NAME="tumbler"
-VERSION=0.1.25
-RELEASE=2
+VERSION=0.1.29
+RELEASE=1
 CATEGORY="Xfce"
 SUMMARY="Xfce thumbnailer service"
 DESCRIPTION="Tumbler is a D-Bus service for applications to request thumbnails
@@ -13,7 +13,10 @@ using GLib and GObject."
 PATCH_URI="0.1.21-dllext.patch"
 
 PKG_NAMES="${NAME} ${NAME}-devel"
-tumbler_CONTENTS="usr/bin/ usr/lib/tumbler-1/ usr/share/"
+tumbler_CONTENTS="etc/ usr/bin/ usr/lib/tumbler-1/ usr/share/"
 tumbler_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 
+# ffmpeg: gstreamer handles all the same mimetypes and then some
+# raw: handled by pixbuf with openraw loader installed
+CYGCONF_ARGS="--disable-ffmpeg-thumbnailer --disable-raw-thumbnailer"
 export PLATFORM_LDFLAGS="-no-undefined"
