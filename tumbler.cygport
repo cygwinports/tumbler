@@ -1,7 +1,7 @@
 inherit xfce4
 
 NAME="tumbler"
-VERSION=0.1.29
+VERSION=0.1.30
 RELEASE=1
 CATEGORY="Xfce"
 SUMMARY="Xfce thumbnailer service"
