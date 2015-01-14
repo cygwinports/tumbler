@@ -2,7 +2,7 @@ inherit xfce4
 
 NAME="tumbler"
 VERSION=0.1.30
-RELEASE=1
+RELEASE=2
 CATEGORY="Xfce"
 SUMMARY="Xfce thumbnailer service"
 DESCRIPTION="Tumbler is a D-Bus service for applications to request thumbnails
